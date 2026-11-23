@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>The Little Match Girl — Listening Quiz</title>
+<style>
+:root{--ink:#24302d;--muted:#5e6c66;--paper:#fffdf8;--cream:#f7f0e5;--red:#9d3936;--green:#31594b;--gold:#c79c55;--line:#e8dfd1;--good:#236344;--bad:#9b302a}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(160deg,#f5eee3 0,#fffdf8 54%,#edf2ec 100%);color:var(--ink);font:17px/1.55 Georgia,"Times New Roman",serif}
+main{max-width:850px;margin:0 auto;padding:28px 18px 64px}.hero{background:var(--green);color:#fffdf8;border-radius:20px;padding:30px clamp(22px,5vw,48px);position:relative;overflow:hidden;box-shadow:0 14px 36px #24302d20}.hero:after{content:"✦";font-size:170px;line-height:1;position:absolute;right:22px;top:-24px;color:#ffffff18}.eyebrow{font:700 12px/1.3 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#f2d99e}.hero h1{font-size:clamp(32px,6vw,52px);line-height:1.08;margin:10px 0}.hero p{max-width:570px;margin:0;color:#edf2ec}.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.pill{font:600 13px system-ui,sans-serif;border:1px solid #ffffff55;border-radius:999px;padding:6px 11px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:clamp(18px,4vw,30px);margin-top:18px;box-shadow:0 6px 20px #24302d0a}.card h2{font-size:25px;margin:0 0 10px;color:var(--green)}.subtle{color:var(--muted);margin-top:0}.video{position:relative;width:100%;aspect-ratio:16/9;background:#17241e;border-radius:12px;overflow:hidden}.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.note{font:14px/1.5 system-ui,sans-serif;color:var(--muted);margin:10px 0 0}
+.question{padding:19px 0;border-top:1px solid var(--line)}.question:first-of-type{border-top:0}.question h3{font-size:19px;line-height:1.35;margin:0 0 12px}.number{font:700 12px system-ui,sans-serif;color:var(--red);letter-spacing:.1em;text-transform:uppercase}.answers{display:grid;gap:8px}.answer{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;cursor:pointer;transition:.15s}.answer:hover{border-color:var(--gold);background:#fffaf0}.answer input{margin:5px 0 0;accent-color:var(--green);flex:0 0 auto}.answer span{font-size:16px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.btn{border:0;border-radius:10px;padding:12px 18px;font:700 15px system-ui,sans-serif;cursor:pointer}.primary{background:var(--red);color:white}.primary:hover{background:#812d2a}.secondary{background:var(--cream);color:var(--ink)}.result{display:none;margin-top:18px;padding:18px;border-radius:12px;font:16px/1.5 system-ui,sans-serif}.result.show{display:block}.result.good{background:#eaf4ed;color:var(--good);border:1px solid #bfd7c6}.result.retry{background:#fbefeb;color:var(--bad);border:1px solid #e7c5bf}.feedback{font:14px/1.45 system-ui,sans-serif;color:var(--muted);margin:7px 0 0}.feedback.correct{color:var(--good)}.feedback.incorrect{color:var(--bad)}footer{text-align:center;color:var(--muted);font:13px system-ui,sans-serif;margin-top:24px}a{color:inherit}
+@media(max-width:520px){main{padding:14px 12px 40px}.hero{border-radius:15px}.hero:after{font-size:115px;right:8px}.card{border-radius:13px}.btn{flex:1}}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+  <div class="eyebrow">A Christmas story · Listening challenge</div>
+  <h1>The Little Match Girl</h1>
+  <p>Watch and listen to Hans Christian Andersen’s short story. Then answer the questions and see how much you understood.</p>
+  <div class="meta"><span class="pill">About 15–20 minutes</span><span class="pill">8 questions</span><span class="pill">Work on your own</span></div>
+</header>
+<section class="card" aria-labelledby="watch-title">
+  <h2 id="watch-title">1. Watch the story</h2>
+  <p class="subtle">Listen carefully. You can replay the video before you start the quiz.</p>
+  <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/OxRXe_AQFL0?start=15" title="The Little Match Girl audiobook" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  <p class="note">The story has a sad ending. If you prefer, you can pause the video at any time.</p>
+</section>
+<section class="card" aria-labelledby="quiz-title">
+  <h2 id="quiz-title">2. Check your understanding</h2>
+  <p class="subtle">Choose one answer for each question. Your score and feedback will appear at the end.</p>
+  <form id="quiz" novalidate>
+    <div class="question" data-answer="b"><div class="number">Question 1</div><h3>When does the story take place?</h3><div class="answers"><label class="answer"><input type="radio" name="q1" value="a"><span>On Christmas morning</span></label><label class="answer"><input type="radio" name="q1" value="b"><span>On a cold New Year’s Eve</span></label><label class="answer"><input type="radio" name="q1" value="c"><span>On a summer afternoon</span></label></div><p class="feedback" aria-live="polite"></p></div>
+    <div class="question" data-answer="c"><div class="number">Question 2</div><h3>What is the girl trying to sell?</h3><div class="answers"><label class="answer"><input type="radio" name="q2" value="a"><span>Flowers</span></label><label class="answer"><input type="radio" name="q2" value="b"><span>Candles</span></label><label class="answer"><input type="radio" name="q2" value="c"><span>Matches</span></label></div><p class="feedback" aria-live="polite"></p></div>
+    <div class="question" data-answer="a"><div class="number">Question 3</div><h3>Why is she afraid to go home?</h3><div class="answers"><label class="answer"><input type="radio" name="q3" value="a"><span>She has not sold any matches and is afraid her father will be angry.</span></label><label class="answer"><input type="radio" name="q3" value="b"><span>She has lost her way home.</span></label><label class="answer"><input type="radio" name="q3" value="c"><span>Her family is waiting for her at the station.</span></label></div><p class="feedback" aria-live="polite"></p></div>
+    <div class="question" data-answer="b"><div class="number">Question 4</div><h3>What does the girl do to feel warm?</h3><div class="answers"><label class="answer"><input type="radio" name="q4" value="a"><span>She goes into a shop.</span></label><label class="answer"><input type="radio" name="q4" value="b"><span>She lights her matches one by one.</span></label><label class="answer"><input type="radio" name="q4" value="c"><span>She starts a fire in the street.</span></label></div><p class="feedback" aria-live="polite"></p></div>
+    <div class="question" data-answer="c"><div class="number">Question 5</div><h3>What does she see in the first match’s light?</h3><div class="answers"><label class="answer"><input type="radio" name="q5" value="a"><span>A beautiful Christmas tree</span></label><label class="answer"><input type="radio" name="q5" value="b"><span>Her grandmother</span></label><label class="answer"><input type="radio" name="q5" value="c"><span>A warm stove</span></label></div><p class="feedback" aria-live="polite"></p></div>
+    <div class="question" data-answer="a"><div class="number">Question 6</div><h3>Who appears to her in one of her visions?</h3><div class="answers"><label class="answer"><input type="radio" name="q6" value="a"><span>Her beloved grandmother</span></label><label class="answer"><input type="radio" name="q6" value="b"><span>A shopkeeper</span></label><label class="answer"><input type="radio" name="q6" value="c"><span>A little boy</span></label></div><p class="feedback" aria-live="polite"></p></div>
+    <div class="question" data-answer="b"><div class="number">Question 7</div><h3>Why does she light all the remaining matches?</h3><div class="answers"><label class="answer"><input type="radio" name="q7" value="a"><span>She wants to make a signal for help.</span></label><label class="answer"><input type="radio" name="q7" value="b"><span>She wants her grandmother’s vision to stay with her.</span></label><label class="answer"><input type="radio" name="q7" value="c"><span>She wants to sell them all at once.</span></label></div><p class="feedback" aria-live="polite"></p></div>
+    <div class="question" data-answer="c"><div class="number">Question 8</div><h3>How do people find the girl the next morning?</h3><div class="answers"><label class="answer"><input type="radio" name="q8" value="a"><span>She is sleeping safely in her home.</span></label><label class="answer"><input type="radio" name="q8" value="b"><span>She is selling matches in the market.</span></label><label class="answer"><input type="radio" name="q8" value="c"><span>She has died in the cold, with burnt matches beside her.</span></label></div><p class="feedback" aria-live="polite"></p></div>
+    <div class="actions"><button class="btn primary" type="submit">Check my answers</button><button class="btn secondary" type="button" id="reset">Try again</button></div>
+    <div class="result" id="result" role="status" aria-live="polite"></div>
+  </form>
+</section>
+<footer>Based on Hans Christian Andersen’s public-domain story, <em>The Little Match Girl</em>.</footer>
+</main>
+<script>
+const form=document.getElementById('quiz'), result=document.getElementById('result');
+const explanations={q1:'The story begins on a bitterly cold New Year’s Eve.',q2:'She is trying to sell matches to people in the street.',q3:'She has sold no matches and fears her father’s anger.',q4:'She lights matches to warm herself and sees visions in their light.',q5:'In the first match, she imagines a large warm stove.',q6:'She sees her grandmother, the person who loved her most.',q7:'She wants to keep her grandmother’s comforting vision from disappearing.',q8:'The story ends tragically: people find her in the street the next morning.'};
+function wrapText(value,max=88){const words=String(value).split(/\s+/);const lines=[];let line='';for(const word of words){if(!line)line=word;else if((line+' '+word).length<=max)line+=' '+word;else{lines.push(line);line=word}}if(line)lines.push(line);return lines}
+function asciiSafe(value){return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[’‘]/g,"'").replace(/[–—]/g,'-').replace(/[“”]/g,'"').replace(/…/g,'...').replace(/[^\x20-\x7E]/g,'?')}
+function downloadResultsPdf(){
+  const lines=['THE LITTLE MATCH GIRL - QUIZ RESULTS','Score: '+lastScore+' out of 8','Completed: '+new Date().toLocaleDateString(),''];
+  document.querySelectorAll('.question').forEach((q,i)=>{
+    const n='q'+(i+1),pick=form.querySelector('input[name="'+n+'"]:checked');
+    const question=q.querySelector('h3').textContent.trim();
+    const chosen=pick?pick.parentElement.querySelector('span').textContent.trim():'No answer';
+    const correct=q.querySelector('input[value="'+q.dataset.answer+'"]').parentElement.querySelector('span').textContent.trim();
+    const right=!!pick&&pick.value===q.dataset.answer;
+    lines.push('Question '+(i+1)+': '+question,'Your answer: '+chosen,right?'Result: Correct':'Result: '+(pick?'Incorrect':'Not answered'));
+    if(!right) lines.push('Correct answer: '+correct);
+    lines.push('');
+  });
+  let pages=[[]];lines.forEach(line=>wrapText(asciiSafe(line)).forEach(w=>{if(pages[pages.length-1].length>=49)pages.push([]);pages[pages.length-1].push(w)}));
+  const objects=[];objects[1]='<< /Type /Catalog /Pages 2 0 R >>';objects[3]='<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>';
+  const pageRefs=[];
+  pages.forEach((page,i)=>{
+    const pageId=4+i*2,streamId=pageId+1;pageRefs.push(pageId+' 0 R');
+    let commands='BT /F1 11 Tf 52 790 Td 15 TL\n';
+    page.forEach((line,j)=>{if(i===0&&j===0)commands+=' /F1 16 Tf ('+line.replace(/[()\\]/g,'\\$&')+') Tj /F1 11 Tf T*\n';else commands+=' ('+line.replace(/[()\\]/g,'\\$&')+') Tj T*\n'});
+    commands+='ET';
+    objects[pageId]='<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents '+streamId+' 0 R >>';
+    objects[streamId]='<< /Length '+commands.length+' >>\nstream\n'+commands+'\nendstream';
+  });
+  objects[2]='<< /Type /Pages /Kids ['+pageRefs.join(' ')+'] /Count '+pages.length+' >>';
+  let pdf='%PDF-1.4\n',offsets=[0];
+  for(let i=1;i<objects.length;i++){offsets[i]=pdf.length;pdf+=i+' 0 obj\n'+objects[i]+'\nendobj\n'}
+  const xref=pdf.length;pdf+='xref\n0 '+objects.length+'\n0000000000 65535 f \n';
+  for(let i=1;i<objects.length;i++)pdf+=String(offsets[i]).padStart(10,'0')+' 00000 n \n';
+  pdf+='trailer\n<< /Size '+objects.length+' /Root 1 0 R >>\nstartxref\n'+xref+'\n%%EOF';
+  const blob=new Blob([pdf],{type:'application/pdf'}),url=URL.createObjectURL(blob),a=document.createElement('a');
+  a.href=url;a.download='little-match-girl-quiz-results.pdf';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+let lastScore=0;
+form.addEventListener('submit',e=>{e.preventDefault();let score=0,missing=0;document.querySelectorAll('.question').forEach((q,i)=>{const n='q'+(i+1),pick=form.querySelector('input[name="'+n+'"]:checked'),fb=q.querySelector('.feedback');if(!pick){missing++;fb.textContent='Choose an answer. '+explanations[n];fb.className='feedback incorrect';return}if(pick.value===q.dataset.answer){score++;fb.textContent='Correct! '+explanations[n];fb.className='feedback correct'}else{fb.textContent='Not quite. '+explanations[n];fb.className='feedback incorrect'}});lastScore=score;result.className='result show '+(score>=6?'good':'retry');result.innerHTML='<strong>You scored '+score+' out of 8.</strong> '+(missing?'You left '+missing+' question'+(missing===1?'':'s')+' unanswered. ':'')+(score===8?'Excellent listening!':score>=6?'Well done - you understood the main details.':'Listen again and give it another try.')+'<p><button class="btn secondary" type="button" id="downloadResults">Download my quiz as PDF</button></p>';document.getElementById('downloadResults').addEventListener('click',downloadResultsPdf);result.scrollIntoView({behavior:'smooth',block:'nearest'});});
+document.getElementById('reset').addEventListener('click',()=>{form.reset();document.querySelectorAll('.feedback').forEach(f=>{f.textContent='';f.className='feedback'});result.className='result';result.textContent='';document.getElementById('quiz-title').scrollIntoView({behavior:'smooth',block:'start'});});
+</script>
+</body>
+</html>
